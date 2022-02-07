@@ -51,8 +51,8 @@ def login(request):
             for i in range(1, 15):
                 #ID/Passが一致したときログイン、主観評価記録用にページ遷移
                 if userid == 'sleep%d' %i and password == 'sleep%d' %i:
-                    global ID
-                    global Pass
+                    #global ID
+                    #global Pass
                     ID = 'sleep%d' %i
                     Pass = 'sleep%d' %i
                     return render(request, 'blog/choice.html', {})
@@ -183,8 +183,28 @@ def choice(request):
 
             #ページ遷移
             #(outputA1～9:文章、outputB1～9:画像、outputC1～9:文章＋画像)
+            if ID == 'sleep' and Pass == 'sleep':
+                if stage==1:
+                    return render(request,'blog/outputC1.html',{})
+                elif stage==2:
+                    return render(request,'blog/outputC2.html',{})
+                elif stage==3:
+                    return render(request,'blog/outputC3.html',{})
+                elif stage==4:
+                    return render(request,'blog/outputC4.html',{})
+                elif stage==5:
+                    return render(request,'blog/outputC5.html',{})
+                elif stage==6:
+                    return render(request,'blog/outputC6.html',{})
+                elif stage==7:
+                    return render(request,'blog/outputC7.html',{})
+                elif stage==8:
+                    return render(request,'blog/outputC8.html',{})
+                elif stage==9:
+                    return render(request,'blog/outputC9.html',{})
+
             for i in range(1, 16):
-                if userid == 'sleep%d' %i and password == 'sleep%d' %i:
+                if ID == 'sleep%d' %i and Pass == 'sleep%d' %i:
                     if stage==1:
                         return render(request,'blog/outputC1.html',{})
                     elif stage==2:
@@ -280,11 +300,11 @@ def draw_map():
             else:
                 ctx.set_source_rgb(0,0,1)
             ctx.fill()
-    surface.write_to_png(r'C:\Users\tmset\djangogirls\static\mondrian.png')
+    surface.write_to_png(r'/home/(ユーザー名)/(ユーザー名).pythonanywhere.com/static/mondrian.png')
 
 #帆陣された画像を睡眠効率に応じて明度変更し画像保存
 def changeValue(Value):
-    img = cv2.imread(r'C:\Users\tmset\djangogirls\static\mondrian.png')  # 画像の読み出し
+    img = cv2.imread(r'/home/(ユーザー名)/(ユーザー名).pythonanywhere.com/static/mondrian.png')  # 画像の読み出し
     img_hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)  # 色空間をBGRからHSVに変換
     s_magnification = 1  # 彩度(Saturation)の倍率
     v_magnification = Value # 明度(Value)の倍率
@@ -292,4 +312,4 @@ def changeValue(Value):
     img_hsv[:,:,(1)] = img_hsv[:,:,(1)]*s_magnification  # 彩度の計算
     img_hsv[:,:,(2)] = img_hsv[:,:,(2)]*v_magnification  # 明度の計算
     img_bgr = cv2.cvtColor(img_hsv,cv2.COLOR_HSV2BGR)  # 色空間をHSVからBGRに変換
-    cv2.imwrite(r'C:\\Users\tmset\djangogirls\static\mondrian.jpg',img_bgr)  # 画像の保存
+    cv2.imwrite(r'/home/(ユーザー名)/(ユーザー名).pythonanywhere.com/static/mondrian.jpg',img_bgr)  # 画像の保存
