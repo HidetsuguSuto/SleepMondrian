@@ -20,15 +20,27 @@ SleepMondrian
 ・pythonanywhere
 ・Fitbit API
 
-手順（Fitbit）
+手順：Fitbit API編
 1.スマートフォンにFitbitをインストールする。
 2.アプリ画面の説明通り、Fitbit senceとスマートフォンを同期させる。
 　※Fitbitアカウントを作成する際、登録したメールアドレスとパスワードを忘れないようにする。
+ここからは　https://watlab-blog.com/2021/05/30/fitbit-api/ を参照した方が分かりやすいと思う。
 3.https://dev.fitbit.com/login　で登録したメールアドレスとパスワードでログインする。
 4.ログインしたら https://dev.fitbit.com に遷移する。右上のManage→Register An Appをクリック。
 5.下の画像のように記入する。Website URLは自身が管理しているサイトを使用するのが好ましいと思う。
 ![スクリーンショット (64)](https://user-images.githubusercontent.com/92623489/152735133-e0305e32-8e29-4c73-8353-bfd61fed6813.png)
 6.遷移後の画面に表示される「OAuth 2.0 Client ID」と「Client Secret」を後で使うのでメモしておく。
-7.「OAuth 2.0 tutorial page」をクリックすると画面遷移する。
-8.AuthorizeのFlow typeを「Authorization Code Flow」にする。
-9.
+7.「OAuth 2.0 tutorial page」をクリックするとページ遷移する。
+8.1: AuthorizeのFlow typeを「Authorization Code Flow」にする。
+9.1: Authorizeの下にあるURLをクリックするとページが遷移する。
+10.取得したいデータを選択し許可するとページが遷移する。
+11.ページのURL欄に記載の「code=」の次から「#」までの間の文字列をCode欄にコピペする。
+12.Fitbit APIのページに戻り、2: Parse responseに手順11でコピペしたコードをペーストする。
+13.access_tokenやrefresh_tokenが記載されたテキストが生成されるので、これを「token.txt」というファイルにして保存する。（場所はどこでもよい）
+
+手順：pythonanywhere編
+https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすいと思うが、途中から手順が異なるので注意してほしい。
+1.pythonanywhereのアカウントを作成する。
+2.「Account」ページに移動したら、「API Token」というタブを選んで、「Create new API token」のボタンを押す。
+3.ロゴをクリックしてDashboardに戻り、New console:の「Bash」をクリックする。
+4.コンソール画面で「pip3.6 install --user pythonanywhere」を実行する。
