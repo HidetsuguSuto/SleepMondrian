@@ -51,9 +51,18 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 9.14、15行目にFitbit API編でメモしておいた「OAuth 2.0 Client ID」と「Client Secret」を記入する。
 10.次に右上にあるWebをクリックし、左側にある（ユーザー名）.pythonanywhere.comをクリック。
 11.画面を下にスクロールさせ、Virtualenv:にある Start a console in this virtualenv をクリックし仮想環境のコンソル画面を開く。
-12.「pip install pycairo」と「pip install opencv-python」と「pip install fitbit」を実行する。
+12.「pip install pycairo」と「pip install opencv-python」と「pip install pandas」と「pip install fitbit」を実行する。
 13.コンソール画面を閉じ、Filesの/home/loserruza/.virtualenvs/loserruza.pythonanywhere.com/lib/python3.6/site-packages/fitbit に移動する。
 14.api.pyを開き、23行目と191行目にあるAPI_versionを1から1.2に変更する。
-15.
+15.Filesの /home/loserruza/loserruza.pythonanywhere.com に移動し、Directoriesにstaticと入力し、New directoryを押す。
+16.Webのページに行き、Reloadを押す。
 
 手順：実行編
+Fitbit senceを着用し一晩寝てからシステムを起動する。
+しかし、最初はデータがないためシステムを使うことができない。
+一時的にFitbitを使用しなくても出力を確認する手順を説明する。
+1.pythonanywhereのFilesの /home/loserruza/loserruza.pythonanywhere.com/blog に移動し、sleep.pyを開く。
+2.5行目からすべてコメントアウトする。
+3.sleepEfficiency = (int) を記入する。(int)は好きな睡眠効率を入れる。
+4.Webのページに行き、Reloadを押す。
+以上を行えばシステムの動作を確認できる。
