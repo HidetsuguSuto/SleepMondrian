@@ -44,3 +44,16 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 2.「Account」ページに移動したら、「API Token」というタブを選んで、「Create new API token」のボタンを押す。
 3.ロゴをクリックしてDashboardに戻り、New console:の「Bash」をクリックする。
 4.コンソール画面で「pip3.6 install --user pythonanywhere」を実行する。
+5.次に「pa_autoconfigure_django.py --python=3.6 https://github.com/HidetsuguSuto/SleepMondrian」を実行する。
+6.コンソール画面を閉じてFilesに行く。/home/(ユーザー名)/（ユーザー名）.pythonanywhere.com　まで移動する。
+7.Upload a fileをクリック。Fitbit API編で保存した「token.txt」をアップロードする。
+8./home/loserruza/loserruza.pythonanywhere.com/blog　に移動し「sleep.py」を開く。
+9.14、15行目にFitbit API編でメモしておいた「OAuth 2.0 Client ID」と「Client Secret」を記入する。
+10.次に右上にあるWebをクリックし、左側にある（ユーザー名）.pythonanywhere.comをクリック。
+11.画面を下にスクロールさせ、Virtualenv:にある Start a console in this virtualenv をクリックし仮想環境のコンソル画面を開く。
+12.「pip install pycairo」と「pip install opencv-python」と「pip install fitbit」を実行する。
+13.コンソール画面を閉じ、Filesの/home/loserruza/.virtualenvs/loserruza.pythonanywhere.com/lib/python3.6/site-packages/fitbit に移動する。
+14.api.pyを開き、23行目と191行目にあるAPI_versionを1から1.2に変更する。
+15.
+
+手順：実行編
