@@ -55,7 +55,9 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 13.コンソール画面を閉じ、Filesの/home/loserruza/.virtualenvs/loserruza.pythonanywhere.com/lib/python3.6/site-packages/fitbit に移動する。
 14.api.pyを開き、23行目と191行目にあるAPI_versionを1から1.2に変更する。
 15.Filesの /home/loserruza/loserruza.pythonanywhere.com に移動し、Directoriesにstaticと入力し、New directoryを押す。
-16.Webのページに行き、Reloadを押す。
+16.Filesの /home/loserruza/loserruza.pythonanywhere.com/blog に移動し、views.pyを開く。
+17.views.pyの303行目と307行目と315行目の(ユーザー名)を自身のユーザー名に変更する。
+17.Webのページに行き、Reloadを押す。
 
 手順：実行編
 Fitbit senceを着用し一晩寝てからシステムを起動する。
