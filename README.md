@@ -27,7 +27,7 @@ SleepMondrian
 ここからは　https://watlab-blog.com/2021/05/30/fitbit-api/ を参照した方が分かりやすいと思う。
 3.https://dev.fitbit.com/login　で登録したメールアドレスとパスワードでログインする。
 4.ログインしたら https://dev.fitbit.com に遷移する。右上のManage→Register An Appをクリック。
-5.下の画像のように記入する。Website URLは自身が管理しているサイトを使用するのが好ましいと思う。
+5.下の画像のように(何を？)記入する。Website URLは自身が管理しているサイトを使用するのが好ましいと思う。
 ![スクリーンショット (64)](https://user-images.githubusercontent.com/92623489/152735133-e0305e32-8e29-4c73-8353-bfd61fed6813.png)
 6.遷移後の画面に表示される「OAuth 2.0 Client ID」と「Client Secret」を後で使うのでメモしておく。
 7.「OAuth 2.0 tutorial page」をクリックするとページ遷移する。
