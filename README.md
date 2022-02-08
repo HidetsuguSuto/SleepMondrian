@@ -35,8 +35,9 @@ SleepMondrian
 9.1: Authorizeの下にあるURLをクリックするとページが遷移する。
 10.取得したいデータを選択し許可するとページが遷移する。
 11.ページのURL欄に記載の「code=」の次から「#」までの間の文字列をCode欄にコピペする。
-12.Fitbit APIのページに戻り、2: Parse responseに手順11でコピペしたコードをペーストする。
-13.access_tokenやrefresh_tokenが記載されたテキストが生成されるので、これを「token.txt」というファイルにして保存する。（場所はどこでもよい）
+12.Fitbit APIのページに戻り、1A Get Codeに手順11でコピペしたコードをペーストする。するとコードが生成されるのでコピーする。（curl -i ～　oauth2/tokenまですべてコピー）
+13.Terminalやコマンドプロンプトで生成されたコードをペーストし実行する。※Windowsのコマンドプロンプトではできない可能性がある。その場合コードをiMacに送信し、iMacのターミナル上で実行すればできるはず。
+14.access_tokenやrefresh_tokenが記載されたテキストが生成されるので、これを「token.txt」というファイルにして保存する。（場所はどこでもよい）
 
 手順：pythonanywhere編
 https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすいと思うが、途中から手順が異なるので注意してほしい。
@@ -50,7 +51,7 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 8./home/loserruza/loserruza.pythonanywhere.com/blog　に移動し「sleep.py」を開く。
 9.14、15行目にFitbit API編でメモしておいた「OAuth 2.0 Client ID」と「Client Secret」を記入する。
 10.次に右上にあるWebをクリックし、左側にある（ユーザー名）.pythonanywhere.comをクリック。
-11.画面を下にスクロールさせ、Virtualenv:にある Start a console in this virtualenv をクリックし仮想環境のコンソル画面を開く。
+11.画面を下にスクロールさせ、Virtualenv:にある Start a console in this virtualenv をクリックし仮想環境のコンソール画面を開く。
 12.「pip install pycairo」と「pip install opencv-python」と「pip install pandas」と「pip install fitbit」を実行する。
 13.コンソール画面を閉じ、Filesの/home/loserruza/.virtualenvs/loserruza.pythonanywhere.com/lib/python3.6/site-packages/fitbit に移動する。
 14.api.pyを開き、23行目と191行目にあるAPI_versionを1から1.2に変更する。
