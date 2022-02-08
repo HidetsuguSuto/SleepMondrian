@@ -14,7 +14,7 @@ SleepMondrian
 　エディション	Windows 10 Home
 　バージョン	21H1
 　インストール日	‎2021/‎08/‎28）
-・Fitbit sence
+・Fitbit sense
 
 ソフトウェア
 ・pythonanywhere
@@ -27,7 +27,7 @@ SleepMondrian
 
 手順：Fitbit API編
 1.スマートフォンにFitbitをインストールする。(AndroidならGooglePlayStoreから、iPhoneならAppStoreから)
-2.アプリ画面の説明通り、Fitbit senceとスマートフォンを同期させる。
+2.アプリ画面の説明通り、Fitbit senseとスマートフォンを同期させる。
 　※Fitbitアカウントを作成する際、登録したメールアドレスとパスワードを忘れないようにする。
 ここからは　https://watlab-blog.com/2021/05/30/fitbit-api/ を参照した方が分かりやすいと思う。
 3.https://dev.fitbit.com/login　で登録したメールアドレスとパスワードでログインする。
@@ -66,7 +66,7 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 17.Webのページに行き、Reloadを押す。
 
 手順：実行編
-Fitbit senceを着用し一晩寝てからシステムを起動する。
+Fitbit senseを着用し一晩寝てからシステムを起動する。
 システムはpythonanywhereのWebに移動し、(ユーザー名).pythonanywhere.comをクリックすると開く。
 まだ寝てないときはデータがないためシステムを使うことができない。
 一時的にFitbitを使用しなくても出力を確認する手順を説明する。
