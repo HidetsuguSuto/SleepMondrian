@@ -20,8 +20,12 @@ SleepMondrian
 ・pythonanywhere
 ・Fitbit API
 
+環境
+・Windows 10 Home MicrosoftEdge
+(手順：Fitbit API編の13でうまくいかない場合はiMacを使用する
+・iMac )
 手順：Fitbit API編
-1.スマートフォンにFitbitをインストールする。
+1.スマートフォンにFitbitをインストールする。(AndroidならGooglePlayStoreから、iPhoneならAppStoreから)
 2.アプリ画面の説明通り、Fitbit senceとスマートフォンを同期させる。
 　※Fitbitアカウントを作成する際、登録したメールアドレスとパスワードを忘れないようにする。
 ここからは　https://watlab-blog.com/2021/05/30/fitbit-api/ を参照した方が分かりやすいと思う。
@@ -49,7 +53,7 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 6.コンソール画面を閉じてFilesに行く。/home/(ユーザー名)/（ユーザー名）.pythonanywhere.com　まで移動する。
 7.Upload a fileをクリック。Fitbit API編で保存した「token.txt」をアップロードする。
 8./home/(ユーザー名)/(ユーザー名).pythonanywhere.com/blog　に移動し「sleep.py」を開く。
-9.14、15行目にFitbit API編でメモしておいた「OAuth 2.0 Client ID」と「Client Secret」を記入する。
+9.14、15行目にFitbit API編でメモしておいた「OAuth 2.0 Client ID」と「Client Secret」を保存する。
 10.次に右上にあるWebをクリックし、左側にある（ユーザー名）.pythonanywhere.comをクリック。
 11.画面を下にスクロールさせ、Virtualenv:にある Start a console in this virtualenv をクリックし仮想環境のコンソール画面を開く。
 12.「pip install pycairo」と「pip install opencv-python」と「pip install pandas」と「pip install fitbit」を実行する。
