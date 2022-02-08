@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+//
+//  manage.py
+//  Djangoの管理プログラム。基本改変してはならない。
+//  DjangoとはPythonを使用したWebアプリケーションフレームワーク
+//
+//
 import os
 import sys
 
