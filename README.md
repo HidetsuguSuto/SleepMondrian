@@ -21,9 +21,10 @@ SleepMondrian
 ・Fitbit API
 
 環境
-・Windows 10 Home MicrosoftEdge
-(手順：Fitbit API編の13でうまくいかない場合はiMacを使用する
-・iMac )
+・Windows 10 Home ウェブブラウザはMicrosoftEdgeを使用した
+(手順：Fitbit API編の13でうまくいかない場合はiMacを使用する。実験では以下のiMacを実際に使用した。
+・iMac, MacOS:Big Sur Version 11.6, Processor:3.1GHz 6-Core Intel Core i5, Memory:8GB 2667MHz DDR4)
+
 手順：Fitbit API編
 1.スマートフォンにFitbitをインストールする。(AndroidならGooglePlayStoreから、iPhoneならAppStoreから)
 2.アプリ画面の説明通り、Fitbit senceとスマートフォンを同期させる。
@@ -66,10 +67,11 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 
 手順：実行編
 Fitbit senceを着用し一晩寝てからシステムを起動する。
-しかし、最初はデータがないためシステムを使うことができない。
+システムはpythonanywhereのWebに移動し、(ユーザー名).pythonanywhere.comをクリックすると開く。
+まだ寝てないときはデータがないためシステムを使うことができない。
 一時的にFitbitを使用しなくても出力を確認する手順を説明する。
-1.pythonanywhereのFilesの /home/loserruza/loserruza.pythonanywhere.com/blog に移動し、sleep.pyを開く。
+1.pythonanywhereのFilesの /home/(ユーザー名)/(ユーザー名).pythonanywhere.com/blog に移動し、sleep.pyを開く。
 2.5行目からすべてコメントアウトする。
-3.sleepEfficiency = (int) を記入する。(int)は好きな睡眠効率を入れる。
+3.コメントアウトしていないところにsleepEfficiency = (int) を記入し保存するする。(int)は好きな睡眠効率（0～100）を入れる。
 4.Webのページに行き、Reloadを押す。
 以上を行えばシステムの動作を確認できる。
