@@ -51,7 +51,7 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 3.ロゴをクリックしてDashboardに戻り、New console:の「Bash」をクリックする。
 4.コンソール画面で「pip3.6 install --user pythonanywhere」を実行する。
 5.次に「pa_autoconfigure_django.py --python=3.6 https://github.com/HidetsuguSuto/SleepMondrian」を実行する。
-6.コンソール画面を閉じてFilesに行く。/home/(ユーザー名)/（ユーザー名）.pythonanywhere.com　まで移動する。
+6.コンソール画面を閉じてFilesに行く。/home/(ユーザー名　まで移動する。
 7.Upload a fileをクリック。Fitbit API編で保存した「token.txt」をアップロードする。
 8./home/(ユーザー名)/(ユーザー名).pythonanywhere.com/blog　に移動し「sleep.py」を開く。
 9.14、15行目にFitbit API編でメモしておいた「OAuth 2.0 Client ID」と「Client Secret」を保存する。
