@@ -33,7 +33,7 @@ now = datetime.datetime.now()
 today = str(now.year) + "-" + str(now.month) + "-" + str(now.day)
 
 # 睡眠データ取得
-dataTxt = str(client.sleep(date = today)
+dataTxt = str(client.sleep(date = today))
 
 #睡眠データから実際に寝た時間とベッドにいた時間を切り抜く
 #例外処理：睡眠時間が100分未満のとき、切り抜く範囲を2桁にする
