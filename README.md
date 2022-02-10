@@ -68,10 +68,15 @@ https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすい
 手順：実行編
 Fitbit senseを着用し一晩寝てからシステムを起動する。
 システムはpythonanywhereのWebに移動し、(ユーザー名).pythonanywhere.comをクリックすると開く。
-まだ寝てないときはデータがないためシステムを使うことができない。
+初期のログインIDとパスワードはどちらも「sleep」に設定している。
+また、まだ寝てないときはデータがないためエラー画面に遷移する。
+
 一時的にFitbitを使用しなくても出力を確認する手順を説明する。
 1.pythonanywhereのFilesの /home/(ユーザー名)/(ユーザー名).pythonanywhere.com/blog に移動し、sleep.pyを開く。
 2.5行目からすべてコメントアウトする。
 3.コメントアウトしていないところにsleepEfficiency = (int) を記入し保存するする。(int)は好きな睡眠効率（0～100）を入れる。
 4.Webのページに行き、Reloadを押す。
 以上を行えばシステムの動作を確認できる。
+
+プログラム改変方法
+---追記していきます。---
