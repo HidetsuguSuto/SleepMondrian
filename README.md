@@ -81,4 +81,5 @@ Fitbit senseを着用し一晩寝てからシステムを起動する。
 以上を行えばシステムの動作を確認できる。
 
 プログラム改変方法
+[システム階層.pdf](https://github.com/HidetsuguSuto/SleepMondrian/files/8107417/default.pdf)
 
