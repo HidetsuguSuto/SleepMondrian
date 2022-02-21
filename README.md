@@ -81,5 +81,8 @@ Fitbit senseを着用し一晩寝てからシステムを起動する。
 以上を行えばシステムの動作を確認できる。
 
 プログラム改変方法
-![システム階層.pdf](https://github.com/HidetsuguSuto/SleepMondrian/files/8107417/default.pdf)
-
+ディレクトリ階層は以下のpdfのようになっている。
+[システム階層.pdf](https://github.com/HidetsuguSuto/SleepMondrian/files/8107612/default.pdf)
+本システムはDjangoという無料でオープンソースとして公開されているPythonを使用したWebアプリケーションフレームワークを使用している。
+詳しくはhttps://tutorial.djangogirls.org/ja/　を見てほしい。
+基本的に改変するときは、「sleep.py」「views.py」「urls.py」とSleepMondrian-main/templates/blogにあるhtmlを書き換えると良い。
