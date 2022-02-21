@@ -46,6 +46,7 @@ SleepMondrian
 
 手順：pythonanywhere編
 https://tutorial.djangogirls.org/ja/deploy/ を参照すると分かりやすいと思うが、途中から手順が異なるので注意してほしい。
+プログラムはUnix系で書いている。PCによっては/を抜いて'を"に変える必要がある。
 1.pythonanywhereのアカウントを作成する。
 2.「Account」ページに移動したら、「API Token」というタブを選んで、「Create new API token」のボタンを押す。
 3.ロゴをクリックしてDashboardに戻り、New console:の「Bash」をクリックする。
@@ -70,6 +71,7 @@ Fitbit senseを着用し一晩寝てからシステムを起動する。
 システムはpythonanywhereのWebに移動し、(ユーザー名).pythonanywhere.comをクリックすると開く。
 初期のログインIDとパスワードはどちらも「sleep」に設定している。
 また、まだ寝てないときはデータがないためエラー画面に遷移する。
+そしてタイムアウトしたり、ログインを何度も失敗すると失効するときがあるため、再度ウェブサイト開きなおさないといけない場合がある。
 
 一時的にFitbitを使用しなくても出力を確認する手順を説明する。
 1.pythonanywhereのFilesの /home/(ユーザー名)/(ユーザー名).pythonanywhere.com/blog に移動し、sleep.pyを開く。
@@ -79,4 +81,4 @@ Fitbit senseを着用し一晩寝てからシステムを起動する。
 以上を行えばシステムの動作を確認できる。
 
 プログラム改変方法
----追記していきます。---
+
