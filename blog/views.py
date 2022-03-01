@@ -1,3 +1,12 @@
+#
+#views.py
+#システムウェブページ管理プログラム
+#モンドリアン風画像生成プログラム
+#
+#Djangoのコンポーネントを改変
+#Updated by Tetsuyoshi Mogami on 2022/02/20
+#
+
 from django.core.cache import cache
 cache.clear() #キャッシュクリア
 
@@ -31,7 +40,6 @@ tiles = {}
 ID = 'ID'
 Pass = 'Pass'
 
-#ログイン
 def login(request):
     # POST
     if request.method == 'POST':
@@ -302,7 +310,7 @@ def draw_map():
             ctx.fill()
     surface.write_to_png(r'/home/(ユーザー名)/(ユーザー名).pythonanywhere.com/static/mondrian.png')
 
-#帆陣された画像を睡眠効率に応じて明度変更し画像保存
+#保存された画像を睡眠効率に応じて明度変更し画像保存
 def changeValue(Value):
     img = cv2.imread(r'/home/(ユーザー名)/(ユーザー名).pythonanywhere.com/static/mondrian.png')  # 画像の読み出し
     img_hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)  # 色空間をBGRからHSVに変換

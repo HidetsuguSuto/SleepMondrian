@@ -1,3 +1,10 @@
+#
+#sleep.py
+#Fitbit senseからFitbitAPIを通して睡眠データを取得するプログラム
+#
+#Updated by Tetsuyoshi Mogami on 2022/02/20
+#
+
 import fitbit #FitbitAPI用
 import datetime #日付取得用
 import pandas as pd #消しても大丈夫かも
